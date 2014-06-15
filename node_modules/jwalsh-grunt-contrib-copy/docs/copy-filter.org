@@ -1,0 +1,67 @@
+* Scenarios 
+
+- Check if empty before copying 
+- Check if destination is more recent than source 
+- Check if file is the same 
+- Check if source file is on correct branch 
+- Check if file is in pushed to origin
+- Check if name indicates privacy 
+
+* Implementation
+
+** Nomenclature
+
+This just uses the nomenclature of array filter().  
+
+https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array/filter 
+
+** Responsibilities 
+
+Should this be applied before being passed to the actual task?  The
+other side of this simply could be in the form: 
+
+#+begin_src javascript
+  {
+    files: [
+      {
+        src: ['test/fixtures/test.js']
+          .filter(function(file) { 
+            return true; 
+          }), 
+        dest: 'tmp/single.js'}
+    ]}
+  
+#+end_src
+
+* Research 
+
+** Ant 
+
+This is not the same as the Ant filter task which is 
+http://ant.apache.org/manual/Tasks/copy.html
+http://ant.apache.org/manual/Tasks/filter.html
+
+** NAnt 
+
+http://nant.sourceforge.net/release/0.85/help/tasks/copy.html 
+
+** Maven 
+
+http://maven.apache.org/plugins/maven-resources-plugin/examples/copy-resources.html
+http://maven.apache.org/plugins/maven-dependency-plugin/copy-mojo.html
+
+** MSBuild
+
+http://msdn.microsoft.com/en-us/library/3e54c37h.aspx
+
+** Rake 
+
+http://docs.rubyrake.org/user_guide/chapter03.html 
+
+** Gradle 
+
+http://www.gradle.org/docs/current/userguide/working_with_files.html
+
+
+
+

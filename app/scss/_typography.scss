@@ -1,0 +1,23 @@
+$body-font-stack: 'Segoe UI Light', 'Helvetica Neue', 'Segoe UI', sans-serif;
+$form-font-stack: $body-font-stack;
+
+
+%alpha {
+  margin-bottom: .5em;
+  font-size: 48px;
+  font-weight: 100;
+}
+
+%beta{
+  margin-bottom: .5em;
+  font-size: 32px;
+  font-weight: 100;
+}
+
+
+
+body{
+  line-height: 1.4;
+  font-family: $body-font-stack;
+
+}

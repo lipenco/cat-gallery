@@ -1,0 +1,34 @@
+// base - compass library, onlys selected modules to speed up build times
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/user-interface";
+@import "compass/utilities/general/clearfix";
+
+
+// vendor - related imports
+@import "vendor/animate";
+
+// color pallette, global vars and helpers
+@import "colors";
+@import "layout";
+@import "typography";
+@import "icons-config";
+
+// reusable ui elements
+@import "ui/page-preloader";
+@import "ui/form";
+@import "ui/buttons";
+
+// subpages / states
+@import "pages/intro";
+@import "pages/cats-index";
+
+
+*{
+  @include box-sizing(border-box); // almost all browsers support this box sizing model
+}
+
+body{
+  background: $white image-url('bg.jpg');
+  @include background-size(cover);
+}

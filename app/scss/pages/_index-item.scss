@@ -1,0 +1,66 @@
+.cats-index-item{
+  padding: 10px;
+  background: $white;
+  @include box-shadow(0 2px 5px rgba(0,0,0,.1));
+
+  @include inline-block;
+  margin: 0 10px 10px 0;
+
+  @for $i from 1 through 40{
+    &:nth-child( #{$i} ){
+      @include animate(fadeInLeft, .4s, $i * .07s);
+    }
+  }
+
+  $avatarSize: 60px;
+  .cat-avatar-wrapper{
+    width: $avatarSize;
+    float: left;
+    display: block;
+    width: $avatarSize;
+    height: $avatarSize;
+    overflow: hidden;
+    img{
+
+    }
+  }
+
+
+  .cat-desc{
+    margin-left: $avatarSize + 10px;
+    line-height: $avatarSize;
+
+    a{
+      text-decoration: none;
+      color: $gray;
+      font-size: 24px;
+    }
+  }
+
+
+  .cat-tools{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  
+
+  &:hover{
+    %overlay-btn{
+      // display: block;
+      visibility: visible;
+      opacity: .8;
+
+
+      // placed here because of the specificity
+      &:hover{
+        @include transition(.1s);
+        opacity: 1;
+      }
+    }
+  }
+}

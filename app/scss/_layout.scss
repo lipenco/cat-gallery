@@ -1,0 +1,67 @@
+body, html{
+  height: 100%;
+}
+
+@mixin respond-to($media){
+  @if $media == phone{
+    @media all and (max-width: 768px){
+      @content; 
+    }
+  } @else {
+    @media all and (max-width: 1024px){
+      @content; 
+    }
+
+  }
+}
+
+
+%subpage-container{
+   max-width: 640px;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.page-container{
+  width: 100%;
+  height: 100%;
+  // position: absolute;
+}
+
+.main-container{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  position: relative;
+}
+
+
+
+
+// .sidebar-container{
+//   left: 0;
+//   top: 0;
+//   width: 200px;
+//   height: 100%;
+//   position: absolute;
+//   z-index: 3;
+// }
+
+// .tools-container{
+//   right: 0;
+//   top: 0;
+//   width: 200px;
+//   height: 100%;
+//   position: absolute;
+//   z-index: 3;
+  
+// }
+
+// .modal-container{
+//   left: 0;
+//   top: 0;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 1000;
+//   position: fixed;
+// }

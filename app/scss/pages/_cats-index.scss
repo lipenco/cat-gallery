@@ -1,0 +1,24 @@
+.cats-index-page{
+  @extend %subpage-container;
+  .cats-index-title{
+    @extend %alpha;
+    color: $white;
+    margin-bottom: .5em;
+  }
+
+  @import "index-item"; // inline import will preserve scope
+  @import "index-empty"; // inline import will preserve scope
+
+  .cats-index-list{
+    display:inline;
+
+  }
+
+  .cats-index-add-btn{
+    @extend %header-btn;
+  }
+
+
+
+
+}
