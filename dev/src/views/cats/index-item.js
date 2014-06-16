@@ -7,9 +7,30 @@ define(function (require) {
 
 
   var CatsIndexItemView = Backbone.Marionette.ItemView.extend({
+    events:{
+      'mouseenter .cat-image':'hoverEffect',
+    },
+
+    // onShow: function(view){
+    //   this.$el.data('row', "1");
+    //   this.$el.data('col', "1");
+    //   this.$el.data('sizex', "2");
+    //   this.$el.data('sizey', "2");
+    // },
+
+
     tagName: 'li',
-    className: 'cats-index-item',
+    className: 'cats-index-item  col-md-4',
     template: Handlebars.compile(CatsIndexItemViewTemplate),
+
+    hoverEffect: function() {
+
+      this.$el.children().find(".cat-image").animate({
+
+      }, 500, function() {
+
+      });
+    }
 
   });
   return CatsIndexItemView;
