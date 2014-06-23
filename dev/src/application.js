@@ -4,6 +4,7 @@ define(function(require){
   var _                 = require('underscore');
 
   var Router            = require('src/router');
+  // var Modernizer        = require('src/vendor/modernizr');
 
   var Application       = new Backbone.Marionette.Application();
 
@@ -37,6 +38,10 @@ define(function(require){
 
     $(this.modal.el).empty();
     this.router.catsIndex();
+  });
+
+  Application.on('gallery:start', function() {
+    this.router.galleryIndex();
   });
 
   Application.addInitializer(function () {

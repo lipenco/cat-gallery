@@ -3,6 +3,7 @@ define(function (require) {
   Backbone.Marionette = require('backbone.marionette');
 
   var CatsIndexView = require('src/views/cats/index');
+  var GalleryIndexView = require('src/views/gallery/index');
 
 
   var Router = Backbone.Router.extend({
@@ -27,6 +28,11 @@ define(function (require) {
     catsIndex:function(){
       var catsIndexView = new CatsIndexView();
       this.application.main.show(catsIndexView);
+    },
+
+    galleryIndex:function(){
+      var galleryIndexView = new GalleryIndexView();
+      this.application.main.show(galleryIndexView);
     },
 
   });

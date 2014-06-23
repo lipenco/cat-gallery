@@ -44,7 +44,8 @@ var jam = {
             "name": "underscore",
             "location": "src/vendor/underscore",
             "main": "underscore.js"
-        }
+        },
+    
     ],
     "version": "0.2.17",
     "shim": {

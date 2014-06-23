@@ -8,28 +8,23 @@ define(function (require) {
 
   var CatsIndexItemView = Backbone.Marionette.ItemView.extend({
     events:{
-      'mouseenter .cat-image':'hoverEffect',
+      'click .cat-image':'showEffect',
     },
-
-    // onShow: function(view){
-    //   this.$el.data('row', "1");
-    //   this.$el.data('col', "1");
-    //   this.$el.data('sizex', "2");
-    //   this.$el.data('sizey', "2");
-    // },
-
 
     tagName: 'li',
     className: 'cats-index-item  col-md-4',
     template: Handlebars.compile(CatsIndexItemViewTemplate),
 
-    hoverEffect: function() {
+    showEffect: function() {
+      $(".cats-index-item:nth-child(even)").animate({
+          left: "-=100%"
+        });
+      $(".cats-index-item:nth-child(odd)").animate({
+          left: "+=100%"
+        });
 
-      this.$el.children().find(".cat-image").animate({
+      Application.trigger("gallery:start");
 
-      }, 500, function() {
-
-      });
     }
 
   });

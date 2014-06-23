@@ -22,6 +22,7 @@
 // subpages / states
 @import "pages/intro";
 @import "pages/cats-index";
+@import "pages/_gallery";
 
 
 *{
@@ -31,8 +32,4 @@
 body{
   @include background-size(cover);
 
-}
-.cats-index-page {
-  background-image: linear-gradient(to bottom right, rgba(211, 131, 18, 0.90), rgba(168, 50, 121, 0.90));
-  
 }

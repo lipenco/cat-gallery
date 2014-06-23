@@ -10,12 +10,16 @@
 
   .cats-index-list{
     display:inline;
+    -webkit-perspective-origin-x: 50%;
+    -webkit-perspective-origin-y: 207px;
 
   }
 
   .cats-index-add-btn{
     @extend %header-btn;
   }
+
+  
 
 
 
