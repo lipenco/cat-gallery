@@ -16,13 +16,6 @@ define(function (require) {
 
     template: Handlebars.compile(CatsIndexItemViewTemplate),
 
-    // render: function(){
-    //       this.$el.html(this.template(this.model.attributes));
-    //       this.$el.hide();
-    //   },
-    // onShow: function(){
-    //     this.$el.slideDown(800);
-    // }
 
     showEffect: function() {
       $(".cats-index-item:nth-child(even)").animate({
@@ -32,13 +25,15 @@ define(function (require) {
           left: "+=100%"
         });
       $('.boxgallery').css('visibility', 'visible');
-      setTimeout(function(){$('.main-container').addClass('gallery-mode');}, 1000);
-
-        // Application.trigger("gallery:start")
-        // setTimeout(function(){Application.trigger("gallery:start")}, 1000);
-
-
-
+      setTimeout(function(){
+        // $('.main-container').addClass('gallery-mode');
+        $('.main-container').hide();
+      }, 1000);
+      // $(".panel").removeClass("current active");
+      var elClass = '.'+ this.model.id ;
+      var image = this.model.get('src');
+      $('.1').children().children().children().attr('src','./img/'+image);
+      $(elClass).children().children().children().attr('src','./img/img_00.jpg');
     }
 
   });

@@ -1,7 +1,8 @@
 
 .js .boxgallery {
-  position: absolute;
+  // position: absolute;
   visibility: hidden;
+  position:fixed;
   div {
     position: absolute;
   }

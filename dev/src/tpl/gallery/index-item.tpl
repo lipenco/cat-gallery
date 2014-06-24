@@ -1,1 +1,1 @@
-<img src="./img/{{src}}" alt=""/>
+<img class="{{id}}" src="./img/{{src}}" alt=""/>

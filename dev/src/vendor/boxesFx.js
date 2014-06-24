@@ -161,10 +161,10 @@
 		var self = this, currentPanel = this.panels[ this.current ];
 
 		if( dir === 'next' ) {
-			this.current = this.current < this.panelsCount - 1 ? this.current + 1 : 0;
+			this.current = this.current < 9 - 1 ? this.current + 1 : 0;
 		}
 		else {
-			this.current = this.current > 0 ? this.current - 1 : this.panelsCount - 1;
+			this.current = this.current > 0 ? this.current - 1 : 9 - 1;
 		}
 
 		// next panel to be shown

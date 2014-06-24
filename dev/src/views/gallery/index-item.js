@@ -15,6 +15,11 @@ define(function (require) {
     className: 'panel',
     template: Handlebars.compile(GalleryIndexItemViewTemplate),
 
+    onShow: function() {
+      var ellClass = this.model.id
+      this.$el.addClass(ellClass)
+    }
+
 
   });
   return GalleryIndexItemView;
