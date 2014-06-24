@@ -22,11 +22,6 @@ define(function (require) {
        this.$el.find("ul").sortable();
     },
 
-
-
-    // appendHtml: function(collectionView, itemView){
-    //   collectionView.$el.find(this.itemViewContainer).prepend(itemView.el);
-    // }
   });
 
   return CatsIndexView;

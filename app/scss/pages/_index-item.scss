@@ -5,19 +5,10 @@ li.cats-index-item{
   background: $white;
   padding: 0;
   display: block;
-  // @include transition(transform 1.1s ease-in-out);
-  // transition: transform 1.1s ease-in-out;
-  // transition: transform 5.9s cubic-bezier(0.7,0,0.3,1);
    -webkit-transition: 1s ease-in-out;
   -moz-transition: 1s ease-in-out;
   -o-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
-
-
-
-  // -webkit-transition: -webkit-transform 0.2s ease-in-out;/* Utilisé pour la transition sur chrome et safari */
-  //  -moz-transition: -moz-transform 0.2s ease-in-out;/* Utilisé pour la transition sur Firefox */
-  //  transition: transform 0.2s ease-in-out;
   @include box-shadow(0 2px 5px rgba(0,0,0,.1));
 
 
@@ -51,8 +42,9 @@ li.cats-index-item{
     .cat-name {
       color: #fff;
       text-align: center;
-      margin:30% auto;
+      margin:50% auto;
       font-size: 3em;
+      // font-family: 'Josefin Sans', 'sans-serif';
       font-family: 'Sacramento', cursive;
     }
   }
@@ -105,30 +97,49 @@ li.cats-index-item{
     -webkit-transform: translateY(0%) translateZ(0);
        -moz-transform: translateY(0%) translateZ(0);
             transform: translateY(0%) translateZ(0);
-    -webkit-transition: -webkit-transform 0.5s ease 0.25s, opacity 0.15s ease 0.25s;
-       -moz-transition:    -moz-transform 0.5s ease 0.25s, opacity 0.15s ease 0.25s;
-            transition:         transform 0.5s ease 0.25s, opacity 0.15s ease 0.25s;
+    -webkit-transition: -webkit-transform 0.5s ease 0.25s;
+       -moz-transition:    -moz-transform 0.5s ease 0.25s;
+            transition:         transform 0.5s ease 0.25s;
   }
 
   .overlay-figure:hover
   .cat-name {
     opacity: 1;
-    -webkit-transform: translateY(200%) translateZ(0);
-       -moz-transform: translateY(200%) translateZ(0);
-            transform: translateY(200%) translateZ(0);
+    -webkit-transform: translateY(100%) translateZ(0);
+       -moz-transform: translateY(100%) translateZ(0);
+            transform: translateY(100%) translateZ(0);
   }
 
 
   .overlay-figure-caption
-  .text {
-    display: block;
-    margin: -60px auto;
-    // margin-left: 30px;
+  .icon-eye {
+    position:absolute;
+    top: 50%;
+    left: 43%;
+    padding: 15px;
+    border-radius: 50%;
+    background:rgba(0, 0, 0, 0.6);
+    // border: 1px solid #2C3E50;
     text-align: center;
     opacity: 0;
-    font-size: 1em;
-    width: 300px;
-    font-family: cursive;
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0) ;
+            transform: translateY(0);
+
+  -webkit-transition: -webkit-transform 0.5s ease 0.25s, opacity 0.15s ease 0.25s;
+  -moz-transition:    -moz-transform 0.5s ease 0.25s, opacity 0.15s ease 0.25s;
+      transition:         transform 0.5s ease 0.25s, opacity 0.15s ease 0.25s;
+  }
+
+  .text {
+    display: block;
+    // font-family: 'Lato', sans-serif;
+    font-family: 'Josefin Sans', 'sans-serif';
+    margin: -30px auto;
+    text-align: center;
+    opacity: 0;
+    font-size: 1.2em;
+    width: 270px;
     -webkit-transform: translateY(0);
        -moz-transform: translateY(0) ;
             transform: translateY(0);
@@ -140,87 +151,21 @@ li.cats-index-item{
   .overlay-figure:hover
   .text {
     opacity: 1;
-    -webkit-transform: translateY(-70px) ;
-       -moz-transform: translateY(-70px)  ;
-            transform: translateY(-70px);
+    -webkit-transform: translateY(-180px) ;
+       -moz-transform: translateY(-180px)  ;
+            transform: translateY(-180px);
+  }
+  .overlay-figure:hover span.icon-eye {
+    opacity: 0.6;
+    -webkit-transform: translateY(-20px) ;
+       -moz-transform: translateY(-20px)  ;
+            transform: translateY(-20px);
   }
 
+  .overlay-figure:hover span.icon-eye:hover {
+    opacity: 1;
 
-
-
-  figure {
-
-  figcaption {
-    &::before, &::after {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 70%;
-      height: 1px;
-      opacity: 0.5;
-      background: #fff;
-      content: '';
-      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-      transition: opacity 0.35s, transform 0.35s;
-      -webkit-transform: translate3d(-50%, -50%, 0);
-      transform: translate3d(-50%, -50%, 0);
-    }
-  }
-  &:hover figcaption {
-    &::before {
-      opacity: 0.5;
-      width: 90%;
-      -webkit-transform: translate3d(-50%, -50%, 0) rotate(45deg);
-      transform: translate3d(-50%, -50%, 0) rotate(45deg);
-    }
-    &::after {
-      opacity: 0.5;
-      width: 90%;
-      -webkit-transform: translate3d(-50%, -50%, 0) rotate(-45deg);
-      transform: translate3d(-50%, -50%, 0) rotate(-45deg);
-    }
   }
 
-
-
-}
-
-
-
-
-  &:hover{
-    %overlay-btn{
-      // display: block;
-      visibility: visible;
-      opacity: .8;
-
-
-      // placed here because of the specificity
-      &:hover{
-        @include transition(.1s);
-        opacity: 1;
-      }
-    }
-  }
-}
-
-// li.cats-index-item.active{
-//   margin-left: -50%;
-//
-// }
-
-li.cats-index-item.active:nth-of-type(1), li.cats-index-item.active:nth-of-type(4) , li.cats-index-item.active:nth-of-type(9){
-  // margin-left: -50%;
-  // position: absolute;
-  // -moz-transform:rotate(120deg);
-
-}
-
-li.cats-index-item.active:nth-of-type(2), li.cats-index-item.active:nth-of-type(5),  li.cats-index-item.active:nth-of-type(8){
-  // margin-top: -50%;
-}
-
-li.cats-index-item.active:nth-of-type(3), li.cats-index-item.active:nth-of-type(6),  li.cats-index-item.active:nth-of-type(7) {
-  // margin-left: -50%;
 
 }

@@ -8,10 +8,10 @@ define(function (require) {
 
   var CatsIndexItemView = Backbone.Marionette.ItemView.extend({
     events:{
-      'click .cat-image':'showEffect',
+      'click .icon-eye':'showEffect',
     },
 
-    tagName: 'li',
+    tagName: 'li ui-state-default',
     className: 'cats-index-item  col-md-4',
 
     template: Handlebars.compile(CatsIndexItemViewTemplate),
@@ -26,10 +26,9 @@ define(function (require) {
         });
       $('.boxgallery').css('visibility', 'visible');
       setTimeout(function(){
-        // $('.main-container').addClass('gallery-mode');
         $('.main-container').hide();
-      }, 1000);
-      // $(".panel").removeClass("current active");
+        Application.main.close();
+      }, 1500);
       var elClass = '.'+ this.model.id ;
       var image = this.model.get('src');
       $('.1').children().children().children().attr('src','./img/'+image);

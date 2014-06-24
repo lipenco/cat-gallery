@@ -6,7 +6,6 @@
   }
 
   @import "index-item"; // inline import will preserve scope
-  @import "index-empty"; // inline import will preserve scope
 
   .cats-index-list{
     display:inline;
@@ -19,7 +18,7 @@
     @extend %header-btn;
   }
 
-  
+
 
 
 

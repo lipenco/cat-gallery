@@ -1,3 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:100|Sacramento);
+@import url(../css/styleicon.css);
+@import url(../css/bootstrap.min.css);
 /* line 17, ../../../../../../../opt/boxen/rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -3287,18 +3291,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
 }
 
-/* line 1, ../../app/scss/_layout.scss */
+/* line 7, ../../app/scss/_layout.scss */
 body, html {
   height: 100%;
 }
 
-/* line 25, ../../app/scss/_layout.scss */
+/* line 31, ../../app/scss/_layout.scss */
 .page-container {
   width: 100%;
   height: 100%;
 }
 
-/* line 31, ../../app/scss/_layout.scss */
+/* line 37, ../../app/scss/_layout.scss */
 .main-container {
   width: 100%;
   z-index: 99999;
@@ -3307,7 +3311,7 @@ body, html {
   position: relative;
 }
 
-/* line 39, ../../app/scss/_layout.scss */
+/* line 45, ../../app/scss/_layout.scss */
 .main-container.gallery-mode {
   z-index: 0;
 }
@@ -3316,13 +3320,6 @@ body, html {
 .cats-index-page .cats-index-title {
   margin-bottom: .5em;
   font-size: 48px;
-  font-weight: 100;
-}
-
-/* line 11, ../../app/scss/_typography.scss */
-.cats-index-page .index-empty-header {
-  margin-bottom: .5em;
-  font-size: 32px;
   font-weight: 100;
 }
 
@@ -3549,11 +3546,6 @@ you can use the generic selector below, but it's slower:
   }
 }
 
-/* line 1, ../../app/scss/pages/_intro.scss */
-.body {
-  background-color: pink;
-}
-
 /* line 2, ../../app/scss/pages/_cats-index.scss */
 .cats-index-page .cats-index-title {
   color: #fafafa;
@@ -3572,7 +3564,7 @@ you can use the generic selector below, but it's slower:
   -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(1) {
   -webkit-animation: fadeInLeft 0.4s 0.07s ease both;
   -moz-animation: fadeInLeft 0.4s 0.07s ease both;
@@ -3580,7 +3572,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.07s ease both;
   animation: fadeInLeft 0.4s 0.07s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(2) {
   -webkit-animation: fadeInLeft 0.4s 0.14s ease both;
   -moz-animation: fadeInLeft 0.4s 0.14s ease both;
@@ -3588,7 +3580,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.14s ease both;
   animation: fadeInLeft 0.4s 0.14s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(3) {
   -webkit-animation: fadeInLeft 0.4s 0.21s ease both;
   -moz-animation: fadeInLeft 0.4s 0.21s ease both;
@@ -3596,7 +3588,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.21s ease both;
   animation: fadeInLeft 0.4s 0.21s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(4) {
   -webkit-animation: fadeInLeft 0.4s 0.28s ease both;
   -moz-animation: fadeInLeft 0.4s 0.28s ease both;
@@ -3604,7 +3596,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.28s ease both;
   animation: fadeInLeft 0.4s 0.28s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(5) {
   -webkit-animation: fadeInLeft 0.4s 0.35s ease both;
   -moz-animation: fadeInLeft 0.4s 0.35s ease both;
@@ -3612,7 +3604,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.35s ease both;
   animation: fadeInLeft 0.4s 0.35s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(6) {
   -webkit-animation: fadeInLeft 0.4s 0.42s ease both;
   -moz-animation: fadeInLeft 0.4s 0.42s ease both;
@@ -3620,7 +3612,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.42s ease both;
   animation: fadeInLeft 0.4s 0.42s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(7) {
   -webkit-animation: fadeInLeft 0.4s 0.49s ease both;
   -moz-animation: fadeInLeft 0.4s 0.49s ease both;
@@ -3628,7 +3620,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.49s ease both;
   animation: fadeInLeft 0.4s 0.49s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(8) {
   -webkit-animation: fadeInLeft 0.4s 0.56s ease both;
   -moz-animation: fadeInLeft 0.4s 0.56s ease both;
@@ -3636,7 +3628,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.56s ease both;
   animation: fadeInLeft 0.4s 0.56s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(9) {
   -webkit-animation: fadeInLeft 0.4s 0.63s ease both;
   -moz-animation: fadeInLeft 0.4s 0.63s ease both;
@@ -3644,7 +3636,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.63s ease both;
   animation: fadeInLeft 0.4s 0.63s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(10) {
   -webkit-animation: fadeInLeft 0.4s 0.7s ease both;
   -moz-animation: fadeInLeft 0.4s 0.7s ease both;
@@ -3652,7 +3644,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.7s ease both;
   animation: fadeInLeft 0.4s 0.7s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(11) {
   -webkit-animation: fadeInLeft 0.4s 0.77s ease both;
   -moz-animation: fadeInLeft 0.4s 0.77s ease both;
@@ -3660,7 +3652,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.77s ease both;
   animation: fadeInLeft 0.4s 0.77s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(12) {
   -webkit-animation: fadeInLeft 0.4s 0.84s ease both;
   -moz-animation: fadeInLeft 0.4s 0.84s ease both;
@@ -3668,7 +3660,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.84s ease both;
   animation: fadeInLeft 0.4s 0.84s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(13) {
   -webkit-animation: fadeInLeft 0.4s 0.91s ease both;
   -moz-animation: fadeInLeft 0.4s 0.91s ease both;
@@ -3676,7 +3668,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.91s ease both;
   animation: fadeInLeft 0.4s 0.91s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(14) {
   -webkit-animation: fadeInLeft 0.4s 0.98s ease both;
   -moz-animation: fadeInLeft 0.4s 0.98s ease both;
@@ -3684,7 +3676,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.98s ease both;
   animation: fadeInLeft 0.4s 0.98s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(15) {
   -webkit-animation: fadeInLeft 0.4s 1.05s ease both;
   -moz-animation: fadeInLeft 0.4s 1.05s ease both;
@@ -3692,7 +3684,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.05s ease both;
   animation: fadeInLeft 0.4s 1.05s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(16) {
   -webkit-animation: fadeInLeft 0.4s 1.12s ease both;
   -moz-animation: fadeInLeft 0.4s 1.12s ease both;
@@ -3700,7 +3692,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.12s ease both;
   animation: fadeInLeft 0.4s 1.12s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(17) {
   -webkit-animation: fadeInLeft 0.4s 1.19s ease both;
   -moz-animation: fadeInLeft 0.4s 1.19s ease both;
@@ -3708,7 +3700,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.19s ease both;
   animation: fadeInLeft 0.4s 1.19s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(18) {
   -webkit-animation: fadeInLeft 0.4s 1.26s ease both;
   -moz-animation: fadeInLeft 0.4s 1.26s ease both;
@@ -3716,7 +3708,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.26s ease both;
   animation: fadeInLeft 0.4s 1.26s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(19) {
   -webkit-animation: fadeInLeft 0.4s 1.33s ease both;
   -moz-animation: fadeInLeft 0.4s 1.33s ease both;
@@ -3724,7 +3716,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.33s ease both;
   animation: fadeInLeft 0.4s 1.33s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(20) {
   -webkit-animation: fadeInLeft 0.4s 1.4s ease both;
   -moz-animation: fadeInLeft 0.4s 1.4s ease both;
@@ -3732,7 +3724,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.4s ease both;
   animation: fadeInLeft 0.4s 1.4s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(21) {
   -webkit-animation: fadeInLeft 0.4s 1.47s ease both;
   -moz-animation: fadeInLeft 0.4s 1.47s ease both;
@@ -3740,7 +3732,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.47s ease both;
   animation: fadeInLeft 0.4s 1.47s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(22) {
   -webkit-animation: fadeInLeft 0.4s 1.54s ease both;
   -moz-animation: fadeInLeft 0.4s 1.54s ease both;
@@ -3748,7 +3740,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.54s ease both;
   animation: fadeInLeft 0.4s 1.54s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(23) {
   -webkit-animation: fadeInLeft 0.4s 1.61s ease both;
   -moz-animation: fadeInLeft 0.4s 1.61s ease both;
@@ -3756,7 +3748,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.61s ease both;
   animation: fadeInLeft 0.4s 1.61s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(24) {
   -webkit-animation: fadeInLeft 0.4s 1.68s ease both;
   -moz-animation: fadeInLeft 0.4s 1.68s ease both;
@@ -3764,7 +3756,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.68s ease both;
   animation: fadeInLeft 0.4s 1.68s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(25) {
   -webkit-animation: fadeInLeft 0.4s 1.75s ease both;
   -moz-animation: fadeInLeft 0.4s 1.75s ease both;
@@ -3772,7 +3764,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.75s ease both;
   animation: fadeInLeft 0.4s 1.75s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(26) {
   -webkit-animation: fadeInLeft 0.4s 1.82s ease both;
   -moz-animation: fadeInLeft 0.4s 1.82s ease both;
@@ -3780,7 +3772,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.82s ease both;
   animation: fadeInLeft 0.4s 1.82s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(27) {
   -webkit-animation: fadeInLeft 0.4s 1.89s ease both;
   -moz-animation: fadeInLeft 0.4s 1.89s ease both;
@@ -3788,7 +3780,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.89s ease both;
   animation: fadeInLeft 0.4s 1.89s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(28) {
   -webkit-animation: fadeInLeft 0.4s 1.96s ease both;
   -moz-animation: fadeInLeft 0.4s 1.96s ease both;
@@ -3796,7 +3788,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.96s ease both;
   animation: fadeInLeft 0.4s 1.96s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(29) {
   -webkit-animation: fadeInLeft 0.4s 2.03s ease both;
   -moz-animation: fadeInLeft 0.4s 2.03s ease both;
@@ -3804,7 +3796,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.03s ease both;
   animation: fadeInLeft 0.4s 2.03s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(30) {
   -webkit-animation: fadeInLeft 0.4s 2.1s ease both;
   -moz-animation: fadeInLeft 0.4s 2.1s ease both;
@@ -3812,7 +3804,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.1s ease both;
   animation: fadeInLeft 0.4s 2.1s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(31) {
   -webkit-animation: fadeInLeft 0.4s 2.17s ease both;
   -moz-animation: fadeInLeft 0.4s 2.17s ease both;
@@ -3820,7 +3812,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.17s ease both;
   animation: fadeInLeft 0.4s 2.17s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(32) {
   -webkit-animation: fadeInLeft 0.4s 2.24s ease both;
   -moz-animation: fadeInLeft 0.4s 2.24s ease both;
@@ -3828,7 +3820,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.24s ease both;
   animation: fadeInLeft 0.4s 2.24s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(33) {
   -webkit-animation: fadeInLeft 0.4s 2.31s ease both;
   -moz-animation: fadeInLeft 0.4s 2.31s ease both;
@@ -3836,7 +3828,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.31s ease both;
   animation: fadeInLeft 0.4s 2.31s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(34) {
   -webkit-animation: fadeInLeft 0.4s 2.38s ease both;
   -moz-animation: fadeInLeft 0.4s 2.38s ease both;
@@ -3844,7 +3836,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.38s ease both;
   animation: fadeInLeft 0.4s 2.38s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(35) {
   -webkit-animation: fadeInLeft 0.4s 2.45s ease both;
   -moz-animation: fadeInLeft 0.4s 2.45s ease both;
@@ -3852,7 +3844,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.45s ease both;
   animation: fadeInLeft 0.4s 2.45s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(36) {
   -webkit-animation: fadeInLeft 0.4s 2.52s ease both;
   -moz-animation: fadeInLeft 0.4s 2.52s ease both;
@@ -3860,7 +3852,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.52s ease both;
   animation: fadeInLeft 0.4s 2.52s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(37) {
   -webkit-animation: fadeInLeft 0.4s 2.59s ease both;
   -moz-animation: fadeInLeft 0.4s 2.59s ease both;
@@ -3868,7 +3860,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.59s ease both;
   animation: fadeInLeft 0.4s 2.59s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(38) {
   -webkit-animation: fadeInLeft 0.4s 2.66s ease both;
   -moz-animation: fadeInLeft 0.4s 2.66s ease both;
@@ -3876,7 +3868,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.66s ease both;
   animation: fadeInLeft 0.4s 2.66s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(39) {
   -webkit-animation: fadeInLeft 0.4s 2.73s ease both;
   -moz-animation: fadeInLeft 0.4s 2.73s ease both;
@@ -3884,7 +3876,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.73s ease both;
   animation: fadeInLeft 0.4s 2.73s ease both;
 }
-/* line 26, ../../app/scss/pages/_index-item.scss */
+/* line 17, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item:nth-child(40) {
   -webkit-animation: fadeInLeft 0.4s 2.8s ease both;
   -moz-animation: fadeInLeft 0.4s 2.8s ease both;
@@ -3892,7 +3884,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.8s ease both;
   animation: fadeInLeft 0.4s 2.8s ease both;
 }
-/* line 34, ../../app/scss/pages/_index-item.scss */
+/* line 25, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item .image-inner {
   display: none;
   -webkit-transform: translateY(0%) translateZ(0);
@@ -3902,7 +3894,7 @@ you can use the generic selector below, but it's slower:
   -moz-transition: -moz-transform 0.5s ease 0.25s, opacity 0.15s ease 0.25s;
   transition: transform 0.5s ease 0.25s, opacity 0.15s ease 0.25s;
 }
-/* line 44, ../../app/scss/pages/_index-item.scss */
+/* line 35, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item .cat-image {
   padding: 0;
   width: 100%;
@@ -3910,15 +3902,15 @@ you can use the generic selector below, but it's slower:
   background-size: 140%;
   background-position: center;
 }
-/* line 51, ../../app/scss/pages/_index-item.scss */
+/* line 42, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item .cat-image .cat-name {
   color: #fff;
   text-align: center;
-  margin: 30% auto;
+  margin: 50% auto;
   font-size: 3em;
   font-family: 'Sacramento', cursive;
 }
-/* line 63, ../../app/scss/pages/_index-item.scss */
+/* line 55, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item .overlay-figure-background {
   position: absolute;
   transition: all 0.5s ease;
@@ -3929,12 +3921,12 @@ you can use the generic selector below, but it's slower:
   opacity: 0;
   background-image: linear-gradient(to bottom right, rgba(211, 131, 18, 0.8), rgba(168, 50, 121, 0.8));
 }
-/* line 75, ../../app/scss/pages/_index-item.scss */
+/* line 67, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item .overlay-figure:hover
 .overlay-figure-background {
   opacity: 1;
 }
-/* line 79, ../../app/scss/pages/_index-item.scss */
+/* line 71, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item .overlay-figure-caption {
   position: absolute;
   top: 0;
@@ -3948,12 +3940,12 @@ you can use the generic selector below, but it's slower:
   -moz-transition: opacity ease 0.25s;
   transition: opacity ease 0.25s;
 }
-/* line 94, ../../app/scss/pages/_index-item.scss */
+/* line 86, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item .overlay-figure:hover
 .overlay-figure-caption {
   opacity: 1;
 }
-/* line 101, ../../app/scss/pages/_index-item.scss */
+/* line 93, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item .overlay-figure-caption
 .cat-name {
   display: block;
@@ -3962,28 +3954,29 @@ you can use the generic selector below, but it's slower:
   -webkit-transform: translateY(0%) translateZ(0);
   -moz-transform: translateY(0%) translateZ(0);
   transform: translateY(0%) translateZ(0);
-  -webkit-transition: -webkit-transform 0.5s ease 0.25s, opacity 0.15s ease 0.25s;
-  -moz-transition: -moz-transform 0.5s ease 0.25s, opacity 0.15s ease 0.25s;
-  transition: transform 0.5s ease 0.25s, opacity 0.15s ease 0.25s;
+  -webkit-transition: -webkit-transform 0.5s ease 0.25s;
+  -moz-transition: -moz-transform 0.5s ease 0.25s;
+  transition: transform 0.5s ease 0.25s;
 }
-/* line 114, ../../app/scss/pages/_index-item.scss */
+/* line 106, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item .overlay-figure:hover
 .cat-name {
   opacity: 1;
-  -webkit-transform: translateY(200%) translateZ(0);
-  -moz-transform: translateY(200%) translateZ(0);
-  transform: translateY(200%) translateZ(0);
+  -webkit-transform: translateY(100%) translateZ(0);
+  -moz-transform: translateY(100%) translateZ(0);
+  transform: translateY(100%) translateZ(0);
 }
-/* line 123, ../../app/scss/pages/_index-item.scss */
+/* line 115, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item .overlay-figure-caption
-.text {
-  display: block;
-  margin: -60px auto;
+.icon-eye {
+  position: absolute;
+  top: 50%;
+  left: 43%;
+  padding: 15px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
   text-align: center;
   opacity: 0;
-  font-size: 1em;
-  width: 300px;
-  font-family: cursive;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   transform: translateY(0);
@@ -3991,64 +3984,42 @@ you can use the generic selector below, but it's slower:
   -moz-transition: -moz-transform 0.5s ease 0.25s, opacity 0.15s ease 0.25s;
   transition: transform 0.5s ease 0.25s, opacity 0.15s ease 0.25s;
 }
-/* line 141, ../../app/scss/pages/_index-item.scss */
+/* line 134, ../../app/scss/pages/_index-item.scss */
+.cats-index-page li.cats-index-item .text {
+  display: block;
+  font-family: 'Josefin Sans', 'sans-serif';
+  margin: -30px auto;
+  text-align: center;
+  opacity: 0;
+  font-size: 1.2em;
+  width: 270px;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 0.5s ease 0.25s, opacity 0.15s ease 0.25s;
+  -moz-transition: -moz-transform 0.5s ease 0.25s, opacity 0.15s ease 0.25s;
+  transition: transform 0.5s ease 0.25s, opacity 0.15s ease 0.25s;
+}
+/* line 152, ../../app/scss/pages/_index-item.scss */
 .cats-index-page li.cats-index-item .overlay-figure:hover
 .text {
   opacity: 1;
-  -webkit-transform: translateY(-70px);
-  -moz-transform: translateY(-70px);
-  transform: translateY(-70px);
+  -webkit-transform: translateY(-180px);
+  -moz-transform: translateY(-180px);
+  transform: translateY(-180px);
 }
-/* line 154, ../../app/scss/pages/_index-item.scss */
-.cats-index-page li.cats-index-item figure figcaption::before, .cats-index-page li.cats-index-item figure figcaption::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 70%;
-  height: 1px;
-  opacity: 0.5;
-  background: #fff;
-  content: '';
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0);
+/* line 158, ../../app/scss/pages/_index-item.scss */
+.cats-index-page li.cats-index-item .overlay-figure:hover span.icon-eye {
+  opacity: 0.6;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  transform: translateY(-20px);
 }
-/* line 170, ../../app/scss/pages/_index-item.scss */
-.cats-index-page li.cats-index-item figure:hover figcaption::before {
-  opacity: 0.5;
-  width: 90%;
-  -webkit-transform: translate3d(-50%, -50%, 0) rotate(45deg);
-  transform: translate3d(-50%, -50%, 0) rotate(45deg);
+/* line 165, ../../app/scss/pages/_index-item.scss */
+.cats-index-page li.cats-index-item .overlay-figure:hover span.icon-eye:hover {
+  opacity: 1;
 }
-/* line 176, ../../app/scss/pages/_index-item.scss */
-.cats-index-page li.cats-index-item figure:hover figcaption::after {
-  opacity: 0.5;
-  width: 90%;
-  -webkit-transform: translate3d(-50%, -50%, 0) rotate(-45deg);
-  transform: translate3d(-50%, -50%, 0) rotate(-45deg);
-}
-/* line 1, ../../app/scss/pages/_index-empty.scss */
-.cats-index-page .cats-index-empty {
-  color: #fafafa;
-  background: rgba(250, 250, 250, 0.1);
-  padding: 10px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-animation: fadeInLeft 0.2s 0.2s ease both;
-  -moz-animation: fadeInLeft 0.2s 0.2s ease both;
-  -ms-animation: fadeInLeft 0.2s 0.2s ease both;
-  -o-animation: fadeInLeft 0.2s 0.2s ease both;
-  animation: fadeInLeft 0.2s 0.2s ease both;
-}
-/* line 8, ../../app/scss/pages/_index-empty.scss */
-.cats-index-page .index-empty-header {
-  margin-bottom: 0;
-}
-/* line 11, ../../app/scss/pages/_cats-index.scss */
+/* line 10, ../../app/scss/pages/_cats-index.scss */
 .cats-index-page .cats-index-list {
   display: inline;
   -webkit-perspective-origin-x: 50%;

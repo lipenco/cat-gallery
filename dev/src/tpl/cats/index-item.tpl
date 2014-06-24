@@ -2,15 +2,10 @@
     <div class="overlay-figure-content">
       <div class="overlay-figure-background"></div>
     </div>
+
     <figcaption class="overlay-figure-caption">
+         <span class="icon-eye"></span>
           <h2 class="cat-name">{{name}}</h2>
           <p class="text">{{description}}</p>
     </figcaption>
 </figure>
-
-<div class="image-inner">
-      <!-- <i class="icon-close"><span class="iconicfill-fullscreen-exit"></span></i> -->
-      <div>
-       <img src="./img/{{src}}" alt="">
-      </div>
-</div>
