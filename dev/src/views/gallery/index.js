@@ -22,7 +22,7 @@ define(function (require) {
     onShow: function(collectionView, itemView) {
       var ell = this.$el.children();
       // new BoxesFx(ell);
-      setTimeout(function(){  new BoxesFx( document.getElementById( 'boxgallery' ) )}, 200);
+      setTimeout(function(){  new BoxesFx( document.getElementById( 'boxgallery' ) )}, 100);
 
 
 

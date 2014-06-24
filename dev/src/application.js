@@ -12,9 +12,8 @@ define(function(require){
   // in future, this could be improved with the use of layouts
 
   Application.addRegions({
-    // sidebar:  '#sidebar-container',
     main:     '#main-container',
-    // tools:    '#tools-container',
+    gallery:  '#gallery-container',
     modal:    '#modal-container'
   });
 
@@ -40,7 +39,7 @@ define(function(require){
     this.router.catsIndex();
   });
 
-  Application.on('gallery:start', function() {
+  Application.on('start', function() {
     this.router.galleryIndex();
   });
 

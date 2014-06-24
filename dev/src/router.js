@@ -32,7 +32,7 @@ define(function (require) {
 
     galleryIndex:function(){
       var galleryIndexView = new GalleryIndexView();
-      this.application.main.show(galleryIndexView);
+      this.application.gallery.show(galleryIndexView);
     },
 
   });

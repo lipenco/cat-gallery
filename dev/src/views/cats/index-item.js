@@ -13,7 +13,16 @@ define(function (require) {
 
     tagName: 'li',
     className: 'cats-index-item  col-md-4',
+
     template: Handlebars.compile(CatsIndexItemViewTemplate),
+
+    // render: function(){
+    //       this.$el.html(this.template(this.model.attributes));
+    //       this.$el.hide();
+    //   },
+    // onShow: function(){
+    //     this.$el.slideDown(800);
+    // }
 
     showEffect: function() {
       $(".cats-index-item:nth-child(even)").animate({
@@ -22,8 +31,13 @@ define(function (require) {
       $(".cats-index-item:nth-child(odd)").animate({
           left: "+=100%"
         });
+      $('.boxgallery').css('visibility', 'visible');
+      setTimeout(function(){$('.main-container').addClass('gallery-mode');}, 1000);
 
-      Application.trigger("gallery:start");
+        // Application.trigger("gallery:start")
+        // setTimeout(function(){Application.trigger("gallery:start")}, 1000);
+
+
 
     }
 

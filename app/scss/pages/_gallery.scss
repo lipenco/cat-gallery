@@ -1,9 +1,7 @@
-html, body, .container {
-  height: 100%;
-}
 
 .js .boxgallery {
   position: absolute;
+  visibility: hidden;
   div {
     position: absolute;
   }
